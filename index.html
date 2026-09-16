@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Prime-Fit</title>
+
+    <!-- BULMA -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-    <div class="container"></div>
+
+    <div class="pagina">
+
+        <!-- BARRA SUPERIOR -->
+        <nav class="navbar barra">
+
+            <div class="navbar-brand">
+
+                <div class="navbar-item nombre">
+                    PRIME-FIT
+                </div>
+
+            </div>
+
+            <div class="navbar-end">
+
+                <div
+                    class="navbar-item iniciar"
+                    onclick="iniciarSesion()">
+
+                    INICIAR SESIÓN
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        <!-- FRANJA AMARILLA SUPERIOR -->
+        <div class="franja"></div>
+
+
+        <!-- PARTE PRINCIPAL -->
+        <section class="hero-prime">
+
+            <!-- TEXTO -->
+            <div class="contenido">
+
+                <h1>
+                    Aquí es donde los mejores se reúnen
+                </h1>
+
+                <h2>
+                    ¡El poder a tu alcance!
+                </h2>
+
+
+                <!-- LOGO -->
+                <img
+                    src="https://ibb.co/3t5jDJk"
+                    class="logo-imagen">
+
+
+                <!-- BOTÓN -->
+                <button
+                    class="button boton"
+                    onclick="empezar()">
+
+                    EMPIEZA AHORA
+
+                </button>
+
+            </div>
+
+
+            <!-- PERSONAS -->
+            <div class="personas">
+
+                <img
+                    src="https://img.freepik.com/vector-premium/fitness-silueta-hombre-mujer_584835-73.jpg"
+                    alt="Prime Fit">
+
+            </div>
+
+        </section>
+
+
+        <!-- FRANJA AMARILLA INFERIOR -->
+        <div class="franja-abajo"></div>
+
+    </div>
+
+
+    <script src="/script.js"></script>
+
 </body>
+
 </html>
