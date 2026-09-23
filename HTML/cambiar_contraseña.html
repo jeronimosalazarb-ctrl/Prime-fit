@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuenta | FIT - PRIME-FIT</title>
+<link rel="stylesheet" href="../css/cambiar_contraseña.css">
+</head>
+<body>
+  <div class="franja"></div>
+
+  <div class="container">
+    <div class="cuenta-card">
+      <h1 class="titulo-cuenta"><span class="cuenta-light">Cuenta</span> <span class="fit-bold">| FIT</span></h1>
+      
+      <p class="subtitulo-cuenta">Cambiar la Contraseña de la Cuenta</p>
+
+      <form id="formCuenta">
+        <div class="fila-inputs">
+          <div class="input-group">
+            <input type="password" id="newPass" placeholder="Contraseña nueva" required>
+          </div>
+          <div class="input-group">
+            <input type="password" id="confirmPass" placeholder="Confirmar contraseña nueva" required>
+          </div>
+        </div>
+
+        <div class="fila-inputs">
+          <div class="input-group">
+            <input type="password" id="actualPass" placeholder="Contraseña actual" required>
+          </div>
+          <div class="input-group input-vacio">
+            <!-- espacio vacio para que quede alineado como en tu foto -->
+          </div>
+        </div>
+
+        <button type="submit" class="btn-actualizar">ACTUALIZAR CONTRASEÑA</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="franja"></div>
+<script src="../js/app.js"></script>
+</body>
+</html>

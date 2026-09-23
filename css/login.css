@@ -1,0 +1,126 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #C9A800; /* El amarillo mostaza de tu foto */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* FRANJAS GRISES */
+.franja {
+  background-color: #3D3D3D;
+  height: 40px;
+  width: 100%;
+}
+
+/* CENTRAR LA TARJETA */
+.container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* TARJETA BLANCA */
+.login-card {
+  background-color: white;
+  width: 100%;
+  max-width: 360px;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1.5px solid black;
+  outline: none;
+  font-size: 13px;
+  text-align: center;
+}
+
+.input-group input:focus {
+  border-color: #C9A800;
+}
+
+/* RECORDARME Y RECUPERAR */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.remember {
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.link {
+  font-size: 11px;
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* BOTÓN NEGRO */
+.btn-principal {
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-principal:hover {
+  background-color: #222;
+}
+
+/* TEXTO DE ABAJO */
+.register {
+  margin-top: 20px;
+  font-size: 11px;
+  color: #555;
+}
+
+.link-bold {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: bold;
+} 

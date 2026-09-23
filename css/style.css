@@ -1,0 +1,264 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background: #202020;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.pagina {
+    width: 98%;
+    height: 98vh;
+    margin: 3px auto;
+
+    background: white;
+
+    overflow: hidden;
+
+    border: 2px solid #202020;
+}
+
+
+.barra {
+    height: 32px;
+
+    background: white;
+
+    padding: 0 30px;
+}
+
+
+.nombre {
+    font-size: 14px;
+
+    color: #273238;
+
+    padding: 0;
+}
+
+
+.iniciar {
+    font-size: 10px;
+
+    color: #222;
+
+    cursor: pointer;
+
+    padding-right: 125px;
+}
+
+
+.franja {
+    height: 117px;
+
+    background: #edca00;
+}
+
+
+
+.hero-prime {
+    height: 239px;
+
+    background: white;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+
+.contenido {
+    position: absolute;
+
+    left: 43px;
+
+    top: 27px;
+
+    z-index: 3;
+}
+
+
+.contenido h1 {
+    font-size: 23px;
+
+    font-weight: 400;
+
+    color: #171717;
+
+    margin-bottom: 3px;
+}
+
+
+.contenido h2 {
+    font-size: 21px;
+
+    font-weight: 400;
+
+    color: #e3bd00;
+
+    text-align: center;
+}
+
+
+
+
+.logo-imagen {
+    position: absolute;
+
+    width: 158px;
+    height: 157px;
+
+    object-fit: cover;
+
+    object-position: left bottom;
+
+    left: 0;
+
+    top: 52px;
+}
+
+
+/* =========================
+   BOTON
+========================= */
+
+.boton {
+    position: absolute;
+
+    left: 180px;
+
+    top: 122px;
+
+    width: 111px;
+
+    height: 32px;
+
+    background: #eac800;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 2px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+}
+
+
+.boton:hover {
+    background: #d8b700;
+
+    color: white;
+}
+
+
+
+.personas {
+    position: absolute;
+
+    right: 55px;
+
+    top: -118px;
+
+    width: 420px;
+
+    height: 510px;
+
+    overflow: hidden;
+}
+
+
+.personas img {
+    position: absolute;
+
+    width: 970px;
+
+    height: 547px;
+
+    max-width: none;
+
+    right: -835px;
+
+    top: 0;
+}
+
+
+
+
+.franja-abajo {
+    height: calc(100% - 388px);
+
+    min-height: 100px;
+
+    background: #edca00;
+}
+
+
+
+
+@media (max-width: 700px) {
+
+    .pagina {
+        width: 100%;
+        height: 100vh;
+
+        margin: 0;
+    }
+
+
+    .barra {
+        padding: 0 15px;
+    }
+
+
+    .iniciar {
+        padding-right: 10px;
+    }
+
+
+    .contenido {
+        left: 20px;
+        top: 25px;
+    }
+
+
+    .contenido h1 {
+        font-size: 18px;
+    }
+
+
+    .contenido h2 {
+        font-size: 17px;
+    }
+
+
+    .personas {
+        right: -120px;
+
+        opacity: .8;
+    }
+
+
+    .logo-imagen {
+        width: 130px;
+        height: 130px;
+    }
+
+
+    .boton {
+        left: 150px;
+    }
+
+}
