@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5; /* Fondo gris clarito como en Figma, NO amarillo */
+  min-height: 100vh;
+}
+
+.franja {
+  display: none; /* Quitamos las franjas amarillas que te estaban tapando todo */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+}
+
+.cuenta-card {
+  background-color: #fffef2;
+  width: 100%;
+  max-width: 650px;
+  padding: 50px 40px 30px 40px;
+  border: 1px solid #ddd;
+}
+
+.titulo-cuenta {
+  text-align: left;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cuenta-light {
+  color: #9c8d6a;
+  font-weight: 400;
+}
+
+.fit-bold {
+  color: #000;
+  font-weight: 800;
+}
+
+.subtitulo-cuenta {
+  text-align: left;
+  font-size: 12px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.fila-inputs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  flex: 1;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 10px;
+  border: 1.5px solid #777;
+  font-size: 11px;
+  outline: none;
+  background: white;
+}
+
+.input-group input:focus {
+  border-color: #000;
+}
+
+.btn-actualizar {
+  width: 100%;
+  max-width: 400px;
+  background-color: #D6B700;
+  color: white;
+  border: none;
+  padding: 11px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 70px auto 0 auto;
+  display: block;
+}
+
+.btn-actualizar:hover {
+  background-color: #b89d00;
+}

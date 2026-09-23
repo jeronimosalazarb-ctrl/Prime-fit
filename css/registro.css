@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #1c1c1c;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.contenedor-principal {
+    min-height: 558px;
+    margin: 13px 11px;
+    background-color: #E2C016;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+
+.registro {
+    width: 248px;
+    height: 372px;
+    background-color: white;
+    border-radius: 2px;
+
+    padding: 29px 33px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+
+.titulo {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 17px;
+    color: #111;
+}
+
+
+.subtitulo {
+    font-size: 10px;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+
+.fila {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+
+.campo {
+    width: 100%;
+    height: 34px;
+
+    border: 1px solid #8c9699;
+    border-radius: 2px;
+
+    padding: 0 7px;
+
+    font-size: 8px;
+    text-align: center;
+
+    color: #333;
+    outline: none;
+}
+
+
+.campo:focus {
+    border-color: #E2C016;
+}
+
+
+.campo::placeholder {
+    color: #333;
+    opacity: 1;
+}
+
+
+.correo {
+    margin-bottom: 0;
+}
+
+
+.seguridad {
+    font-size: 10px;
+    margin-top: 1px;
+    margin-bottom: 21px;
+    color: #111;
+}
+
+
+.continuar {
+    width: 100%;
+    height: 34px;
+
+    margin-top: 11px;
+
+    background-color: #E2C016;
+    color: white;
+
+    border: none;
+    border-radius: 2px;
+
+    font-size: 8px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+.continuar:hover {
+    background-color: #d0af0d;
+}
+
+
+.cuenta {
+    text-align: center;
+    margin-top: 3px;
+
+    font-size: 8px;
+    color: #111;
+    white-space: nowrap;
+}
+
+
+.cuenta a {
+    color: #55c6cc;
+    text-decoration: none;
+    margin-left: 4px;
+}
+
+
+.cuenta a:hover {
+    text-decoration: underline;
+}

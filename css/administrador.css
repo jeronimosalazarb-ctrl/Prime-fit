@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #D6B700;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.barra-negra-top {
+  background-color: #1e1e1e;
+  height: 45px;
+  width: 100%;
+}
+
+.barra-negra-bottom {
+  background-color: #1e1e1e;
+  height: 25px;
+  width: 100%;
+}
+
+.fondo-amarillo {
+  background-color: #D6B700;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 15px;
+}
+
+.login-card {
+  background-color: white;
+  width: 100%;
+  max-width: 320px;
+  padding: 35px 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.logo {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.subtitle {
+  font-size: 9px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 18px;
+}
+
+.admin {
+  font-weight: bold;
+  color: #000;
+  font-size: 9px;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 9px 10px;
+  border: 1.5px solid #000;
+  font-size: 11px;
+  outline: none;
+  text-align: center;
+}
+
+.input-group input::placeholder {
+  font-size: 9px;
+  color: #666;
+}
+
+.input-group input:focus {
+  border-color: #D6B700;
+}
+
+.opciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 12px 0 18px 0;
+}
+
+.remember {
+  font-size: 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #333;
+}
+
+.link {
+  font-size: 8px;
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.btn-login {
+  width: 100%;
+  background-color: #000;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background-color: #222;
+}
+
+.registro {
+  margin-top: 15px;
+  font-size: 7.5px;
+  color: #555;
+}
+
+.registro a {
+  color: #0066ff;
+  text-decoration: none;
+  font-weight: bold;
+}
