@@ -1,128 +1,106 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
 }
 
-body {
-    background-color: #e5be15; /* Color amarillo de fondo */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
+body{
+  background:#E5E5E5;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
 }
 
-.header-title {
-    font-size: 28px;
-    font-weight: bold;
-    color: #000;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
+.contenedor-cuenta{
+  background:white;
+  width:420px;
+  padding:35px 30px;
+  border-radius:2px;
+  box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
-.card {
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 420px;
-    padding: 35px 30px;
-    border-radius: 4px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.titulo{
+  text-align:center;
+  font-size:24px;
+  font-weight:300;
+  color:#777;
+  margin-bottom:25px;
+  letter-spacing:1px;
+}
+.titulo span{
+  color:#C68B4A;
+  font-weight:400;
 }
 
-.card-title {
-    text-align: center;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: #222;
-    margin-bottom: 25px;
-    text-transform: uppercase;
+.subtitulo{
+  font-size:11px;
+  color:#000;
+  margin-bottom:10px;
+  font-weight:bold;
 }
 
-.section-label {
-    font-size: 13px;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 12px;
+.plan-actual{
+  border:1.5px solid #C68B4A;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 14px;
+  margin-bottom:6px;
 }
 
-.form-row {
-    display: flex;
-    gap: 12px;
-    margin-bottom: 15px;
+.membresia{
+  border:1px solid #E0E0E0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 14px;
+  margin-bottom:10px;
+  background:#FFF;
 }
 
-.input-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+.plan-izq{
+  font-size:11px;
+  font-weight:bold;
+  color:#000;
 }
 
-.input-group.full-width {
-    margin-bottom: 20px;
+.plan-der{
+  font-size:8px;
+  color:#777;
+  text-align:right;
+  line-height:12px;
 }
 
-input[type="text"],
-input[type="tel"],
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    height: 42px;
-    padding: 0 10px;
-    border: 1px solid #777;
-    border-radius: 2px;
-    font-size: 13px;
-    color: #333;
-    outline: none;
-    background-color: #fff;
+.info-vence{
+  display:flex;
+  justify-content:space-between;
+  font-size:8px;
+  color:#777;
+  margin-bottom:5px;
 }
 
-input::placeholder {
-    color: #666;
-    font-size: 12px;
+.info-vence a{
+  color:#6CA6C1;
+  text-decoration:underline;
+  font-size:8px;
 }
 
-input:focus {
-    border-color: #000;
+.btn-renovar{
+  width:100%;
+  height:38px;
+  background:#D6B700;
+  border:none;
+  color:#000;
+  font-size:9px;
+  font-weight:bold;
+  letter-spacing:0.5px;
+  margin-top:18px;
+  cursor:pointer;
 }
 
-.security-section {
-    margin-top: 10px;
-}
-
-.btn-submit {
-    width: 100%;
-    height: 42px;
-    background-color: #d1b113;
-    border: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 13px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 2px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    transition: background-color 0.2s;
-}
-
-.btn-submit:hover {
-    background-color: #be9f0f;
-}
-
-.footer-text {
-    text-align: center;
-    font-size: 12px;
-    color: #333;
-}
-
-.footer-text a {
-    color: #00a896;
-    text-decoration: underline;
-    font-weight: 500;
+.btn-renovar:hover{
+  background:#000;
+  color:#D6B700;
 }

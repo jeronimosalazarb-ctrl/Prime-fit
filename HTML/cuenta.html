@@ -3,139 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRIME-FIT</title>
-
-    <link rel="stylesheet" href="/CSS/cuenta.css">
+    <title>Cuenta - PRIME-FIT</title>
+    <link rel="stylesheet" href="../css/cuenta.css">
 </head>
-
 <body>
 
-   
-    <header>
-        <div class="logo">PRIME-FIT</div>
-    </header>
+    <div class="top-bar">PRIME-FIT</div>
+
+    <div class="contenedor">
+
+        <!-- MENU IZQUIERDA -->
+        <nav class="menu-lateral">
+            <a href="cuenta.html" class="activo">INFORMACIÓN DE LA CUENTA</a>
+            <a href="cambiar_foto.html">CAMBIAR FOTO</a>
+            <a href="cambiar_password.html">CAMBIAR CONTRASEÑA</a>
+            <a href="planes.html">PLANES DE SUSCRIPCIÓN</a>
+            <a href="miembros.html">MIEMBROS AFILIADOS</a>
+            <a href="tablero_administrador.html">ADMINISTRAR SUSCRIPCIONES</a>
+            <a href="estadisticas.html">ESTADÍSTICAS DEL GIMNASIO</a>
+        </nav>
+
+        <!-- TARJETA CUENTA -->
+        <div class="card-cuenta">
+            <h2>Cuenta</h2>
+            <p class="sub">Información de la Cuenta</p>
+
+            <form id="formCuenta" class="form-cuenta">
+                <input type="text" id="nombres" placeholder="Nombres">
+                <input type="text" id="apellidos" placeholder="Apellidos">
 
 
-    <main class="contenedor">
-
-        
-        <aside class="menu">
-
-            <div class="menu-titulo">
-                INFORMACIÓN DE LA CUENTA
-            </div>
-
-            <div class="menu-opcion">
-                CAMBIAR FOTO
-            </div>
-
-            <div class="menu-opcion">
-                CAMBIAR CONTRASEÑA
-            </div>
-
-            <div class="menu-opcion">
-                PLANES DE SUSCRIPCIÓN
-            </div>
-
-            <div class="menu-opcion">
-                MIEMBROS AFILIADOS
-            </div>
-
-            <div class="menu-opcion">
-                ADMINISTRAR SUSCRIPCIONES
-            </div>
-
-            <div class="menu-opcion">
-                ESTADÍSTICAS DEL GIMNASIO
-            </div>
-
-        </aside>
-
-
-        
-        <section class="cuenta">
-
-            <h1>Cuenta</h1>
-
-            <p class="subtitulo">
-                Información de la Cuenta
-            </p>
-
-
-           
-            <div class="campos">
-
-                <input type="text" placeholder="Nombres">
-
-                <input type="text" placeholder="Apellidos">
-
-
-                <input
-                    type="text"
-                    class="azul"
-                    placeholder="Edad"
-                >
-
-                <input
-                    type="text"
-                    class="azul"
-                    placeholder="Sexo"
-                >
-
-
-                <input
-                    type="text"
-                    class="azul"
-                    placeholder="Estatura"
-                >
-
-                <input
-                    type="text"
-                    class="azul"
-                    placeholder="Peso"
-                >
-
-
-                <input
-                    type="text"
-                    placeholder="Teléfono"
-                >
-
-                <input
-                    type="text"
-                    class="azul"
-                    placeholder="Correo electrónico"
-                >
-
-
-                <input
-                    type="text"
-                    placeholder="Usuario"
-                >
-
-            </div>
-
-
-            <div class="usuario">
-
-                <div class="icono">
-                    PF
+                
+                <div class="campo">
+                    <input type="text" id="edad">
+                    <span>Edad</span>
+                </div>
+                <div class="campo">
+                    <input type="text" id="sexo">
+                    <span>Sexo</span>
                 </div>
 
-                <div class="nombre-usuario">
-                    prime-fit
+                <div class="campo">
+                    <input type="text" id="estatura">
+                    <span>Estatura</span>
+                </div>
+                <div class="campo">
+                    <input type="text" id="peso">
+                    <span>Peso</span>
                 </div>
 
-            </div>
+                <div class="campo">
+                    <input type="tel" id="telefono">
+                    <span>Teléfono</span>
+                </div>
+                <div class="campo">
+                    <input type="email" id="correo">
+                    <span>Correo electrónico</span>
+                </div>
 
+                <div class="campo left">
+                    <input type="text" id="usuario">
+                    <span>Usuario</span>
+                </div>
 
-            <button class="actualizar">
-                ACTUALIZAR INFORMACIÓN
-            </button>
+                <div class="full logo-area">
+                    <div class="box-logo">PF</div>
+                    <span>prime-fit</span>
+                </div>
 
-        </section>
+                <button type="submit" class="btn-actualizar full">ACTUALIZAR INFORMACIÓN</button>
+            </form>
+        </div>
 
-    </main>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/cuenta.js"></script>
 </body>
 </html>

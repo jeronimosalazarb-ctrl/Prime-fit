@@ -1,83 +1,48 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <title>PRIME-FIT | Planes</title>
-    <link rel="stylesheet" href="/Prime-fit/cuenta.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planes - PRIME-FIT</title>
+<link rel="stylesheet" href="../css/planes.css">
 </head>
-
 <body>
 
-<header class="topbar">
-    <div class="logo">PRIME-FIT</div>
-</header>
+<div class="barra-amarilla"></div>
+<div class="logo-top">PRIME-FIT</div>
 
-<main class="layout">
+<div class="contenedor-blanco">
+  <div class="navegacion">
+    <a href="cuenta.html">INFORMACIÓN DE LA CUENTA</a>
+    <a href="#">CAMBIAR FOTO</a>
+  </div>
 
-    <aside class="sidebar">
+  <div class="card-planes">
+    <h2>Planes de suscripción</h2>
+    <p class="descripcion">Consulta y selecciona el plan que deseas utilizar.</p>
 
-        <div class="sidebar-title">
-            
-        </div>
+    <label class="label-select">Elige tu plan</label>
+    <div class="selector-plan">
+      <select id="planSelect">
+        <option value="basic">Plan Básico - $120.000 / 30 días</option>
+        <option value="power">Power Prime-Fit - $220.000 / 75 días</option>
+        <option value="ultra">Ultra Prime-Fit - $500.000 / 200 días</option>
+      </select>
+    </div>
 
-        <a href="index.html">INFORMACIÓN DE LA CUENTA</a>
+    <div class="info-plan" id="infoPlan">
+      <div class="fila-info"><span>Costo:</span> <strong id="costo">$120.000</strong></div>
+      <div class="fila-info"><span>Duración:</span> <strong id="duracion">30 días</strong></div>
+      <div class="fila-info"><span>Beneficios:</span> <span id="beneficios">Acceso a gimnasio</span></div>
+    </div>
 
-        <a href="cambiar-foto.html">CAMBIAR FOTO</a>
+    <button class="btn-seleccionar" id="btnSeleccionar">SELECCIONAR PLAN</button>
+  </div>
+</div>
 
-        <a href="cambiar-contrasena.html">
-           
-        </a>
-
-        <a href="planes.html">
-            
-        </a>
-
-        <a href="miembros.html">
-            
-        </a>
-
-        <a href="administrar.html">
-        </a>
-
-        <a href="estadisticas.html">
-            
-        </a>
-
-    </aside>
-
-
-    <section class="simple-content">
-
-        <h1>Planes de suscripción</h1>
-
-        <p>
-            Consulta y selecciona el plan que deseas utilizar.
-        </p>
-
-        <div class="form-box">
-
-            <select>
-
-                <option>Plan Básico</option>
-
-                <option>Plan Premium</option>
-
-                <option>Plan Mensual</option>
-
-                <option>Plan Anual</option>
-
-            </select>
-
-            <button class="btn">
-                SELECCIONAR PLAN
-            </button>
-
-        </div>
-
-    </section>
-
-</main>
+<div class="barra-amarilla-bottom"></div>
+<div class="barra-negra"></div>
 
 </body>
+
 </html>

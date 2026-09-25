@@ -3,65 +3,50 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TABLERO PRIME-FIT</title>
-<style>
-  *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
-  body{background:#D6B700; min-height:100vh; display:flex; flex-direction:column;}
-  
-  .barra-amarilla-top{height:55px; background:#D6B700; display:flex; align-items:flex-start; padding:8px 20px;}
-  .barra-negra{height:18px; background:#1a1a1a; width:100%;}
-  .fondo-blanco{background:white; width:100%; padding:25px 40px 60px 40px; flex:1;}
-  .mini{font-size:9px; font-weight:bold; color:#aaa; letter-spacing:1px;}
-  .titulo{margin-top:20px; font-size:15px; margin-bottom:40px;}
-  .light{color:#C7B07B; font-weight:400;}
-  .bold{color:#000; font-weight:800;}
-
-  .grid{display:grid; grid-template-columns:repeat(5, 145px); gap:20px;}
-  .cuadro{border:1.5px solid #dbe4f0; height:115px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:15px; text-decoration:none; color:#000; background:white;}
-  .cuadro:hover{border-color:#000;}
-  .cuadro .ico{font-size:32px;}
-  .cuadro p{font-size:7px; font-weight:bold; text-align:center;}
-
-  .barra-amarilla-bottom{height:140px; background:#D6B700;}
-  
-  @media(max-width:800px){ .grid{grid-template-columns:repeat(2,1fr);} }
-</style>
+<title>Tablero - PRIME-FIT</title>
+<link rel="stylesheet" href="../css/tablero_administrador.css">
 </head>
 <body>
 
-  <div class="barra-amarilla-top"></div>
-  <div class="barra-negra"></div>
+<div class="barra-amarilla-top"></div>
 
-  <div class="fondo-blanco">
-    <span class="mini">PRIME-FIT</span>
-    <h2 class="titulo"><span class="light">TABLERO</span> <span class="bold">PRIME-FIT</span></h2>
+<div class="contenedor-blanco">
+  <p class="logo">PRIME-FIT</p>
+  <h2 class="titulo">TABLERO PRIME-FIT</h2>
 
-    <div class="grid">
-      <a href="cuenta.html" class="cuadro">
-        <span class="ico">👤</span>
-        <p>CUENTA</p>
-      </a>
-      <a href="#" class="cuadro">
-        <span class="ico">📊</span>
-        <p>CREAR SUSCRIPCION</p>
-      </a>
-      <a href="usuarios.html" class="cuadro">
-        <span class="ico">👥</span>
-        <p>LISTA DE USUARIOS</p>
-      </a>
-      <a href="#" class="cuadro">
-        <span class="ico">🏋️</span>
-        <p>CREAR COACH</p>
-      </a>
-      <a href="#" class="cuadro">
-        <span class="ico">💪</span>
-        <p>CREAR RUTINAS</p>
-      </a>
-    </div>
+  <div class="grid-tablero">
+    
+    <a href="coaches.html" class="tarjeta">
+      <span class="icono">👤</span>
+      <p>COACHES</p>
+    </a>
+
+    <a href="crear_rutinas.html" class="tarjeta">
+      <span class="icono">📊</span>
+      <p>CREAR RUTINAS</p>
+    </a>
+
+    <a href="listar_usuarios.html" class="tarjeta">
+      <span class="icono">👥</span>
+      <p>LISTAR USUARIOS</p>
+    </a>
+
+    <a href="crear_coach.html" class="tarjeta">
+      <span class="icono">🏋️</span>
+      <p>CREAR COACH</p>
+    </a>
+
+    <a href="crear_rutinas.html" class="tarjeta">
+      <span class="icono">💪</span>
+      <p>CREAR RUTINAS</p>
+    </a>
+
   </div>
+</div>
 
-  <div class="barra-amarilla-bottom"></div>
-  <div class="barra-negra"></div>
+<div class="barra-amarilla-bottom"></div>
+<div class="barra-negra"></div>
 
 </body>
+
 </html>
