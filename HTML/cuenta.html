@@ -1,83 +1,93 @@
 <!DOCTYPE html>
+
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuenta - PRIME-FIT</title>
-    <link rel="stylesheet" href="../css/cuenta.css">
+
+<title>Cuenta - PRIME-FIT</title>
+<link rel="stylesheet" href="../CSS/cuenta.css">
+
 </head>
+
 <body>
 
-    <div class="top-bar">PRIME-FIT</div>
+<div class="top-bar">PRIME-FIT</div>
 
-    <div class="contenedor">
+<div class="contenedor">
 
-        <!-- MENU IZQUIERDA -->
-        <nav class="menu-lateral">
-            <a href="cuenta.html" class="activo">INFORMACIÓN DE LA CUENTA</a>
-            <a href="cambiar_foto.html">CAMBIAR FOTO</a>
-            <a href="cambiar_password.html">CAMBIAR CONTRASEÑA</a>
-            <a href="planes.html">PLANES DE SUSCRIPCIÓN</a>
-            <a href="miembros.html">MIEMBROS AFILIADOS</a>
-            <a href="tablero_administrador.html">ADMINISTRAR SUSCRIPCIONES</a>
-            <a href="estadisticas.html">ESTADÍSTICAS DEL GIMNASIO</a>
-        </nav>
+    <!-- MENU IZQUIERDA -->
+    <nav class="menu-lateral">
+        <a href="cuenta.html" class="activo">INFORMACIÓN DE LA CUENTA</a>
+        <a href="cambiar_foto.html">CAMBIAR FOTO</a>
+        <a href="cambiar_password.html">CAMBIAR CONTRASEÑA</a>
+        <a href="planes.html">PLANES DE SUSCRIPCIÓN</a>
+        <a href="miembros.html">MIEMBROS AFILIADOS</a>
+        <a href="tablero_administrador.html">ADMINISTRAR SUSCRIPCIONES</a>
+        <a href="estadisticas.html">ESTADÍSTICAS DEL GIMNASIO</a>
+    </nav>
 
-        <!-- TARJETA CUENTA -->
-        <div class="card-cuenta">
-            <h2>Cuenta</h2>
-            <p class="sub">Información de la Cuenta</p>
+    <!-- TARJETA CUENTA -->
+    <div class="card-cuenta">
+        <h2>Cuenta</h2>
+        <p class="sub">Información de la Cuenta</p>
 
-            <form id="formCuenta" class="form-cuenta">
-                <input type="text" id="nombres" placeholder="Nombres">
-                <input type="text" id="apellidos" placeholder="Apellidos">
+        <form id="formCuenta" class="form-cuenta">
 
+            <input type="text" id="nombres" placeholder="Nombres">
+            <input type="text" id="apellidos" placeholder="Apellidos">
 
-                
-                <div class="campo">
-                    <input type="text" id="edad">
-                    <span>Edad</span>
-                </div>
-                <div class="campo">
-                    <input type="text" id="sexo">
-                    <span>Sexo</span>
-                </div>
+            <div class="campo">
+                <input type="text" id="edad">
+                <span>Edad</span>
+            </div>
 
-                <div class="campo">
-                    <input type="text" id="estatura">
-                    <span>Estatura</span>
-                </div>
-                <div class="campo">
-                    <input type="text" id="peso">
-                    <span>Peso</span>
-                </div>
+            <div class="campo">
+                <input type="text" id="sexo">
+                <span>Sexo</span>
+            </div>
 
-                <div class="campo">
-                    <input type="tel" id="telefono">
-                    <span>Teléfono</span>
-                </div>
-                <div class="campo">
-                    <input type="email" id="correo">
-                    <span>Correo electrónico</span>
-                </div>
+            <div class="campo">
+                <input type="text" id="estatura">
+                <span>Estatura</span>
+            </div>
 
-                <div class="campo left">
-                    <input type="text" id="usuario">
-                    <span>Usuario</span>
-                </div>
+            <div class="campo">
+                <input type="text" id="peso">
+                <span>Peso</span>
+            </div>
 
-                <div class="full logo-area">
-                    <div class="box-logo">PF</div>
-                    <span>prime-fit</span>
-                </div>
+            <div class="campo">
+                <input type="tel" id="telefono">
+                <span>Teléfono</span>
+            </div>
 
-                <button type="submit" class="btn-actualizar full">ACTUALIZAR INFORMACIÓN</button>
-            </form>
-        </div>
+            <div class="campo">
+                <input type="email" id="correo">
+                <span>Correo electrónico</span>
+            </div>
 
+            <div class="campo left">
+                <input type="text" id="usuario">
+                <span>Usuario</span>
+            </div>
+
+            <div class="full logo-area">
+                <div class="box-logo">PF</div>
+                <span>prime-fit</span>
+            </div>
+
+            <button type="submit" class="btn-actualizar full">
+                ACTUALIZAR INFORMACIÓN
+            </button>
+
+        </form>
     </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="../js/cuenta.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../js/cuenta.js"></script>
+
 </body>
 </html>
