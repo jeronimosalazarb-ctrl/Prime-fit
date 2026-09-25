@@ -1,136 +1,265 @@
-* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, Helvetica, sans-serif; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
 
 body {
-    background: linear-gradient(180deg, #e68a2e 0%, #f7c600 100%);
+    background: #E2C016;
     min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: #17252A;
 }
 
-.top-bar {
-    padding: 18px 25px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    color: #333;
-    background: #e68a2e;
-}
 
-.contenedor {
+
+
+header {
+    height: 68px;
+
     display: flex;
-    gap: 30px;
-    padding: 30px 40px;
+    align-items: center;
+
+    padding-left: 38px;
 }
 
-/* MENU IZQUIERDA */
-.menu-lateral {
-    width: 260px;
-    background: #1f2933;
-    border-radius: 2px;
-    overflow: hidden;
-    height: fit-content;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
 
-.menu-lateral a {
-    display: block;
-    padding: 14px 20px;
-    font-size: 10px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #d1d5db;
-    border-bottom: 1px solid #2a3642;
+.logo {
+    font-size: 11px;
+
+    color: #111;
+
     letter-spacing: 0.5px;
 }
 
-.menu-lateral a.activo {
-    background: #f1f3f5;
-    color: #000;
-}
 
-.menu-lateral a:hover { background: #2a3642; color: white; }
-.menu-lateral a.activo:hover { background: #f1f3f5; color: #000; }
 
-/* TARJETA DERECHA */
-.card-cuenta {
-    background: #f5f7f8;
-    width: 520px;
-    padding: 25px 35px 20px 35px;
-    border-radius: 2px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-.card-cuenta h2 {
-    text-align: center;
-    color: #c8961e;
-    font-weight: 300;
-    font-size: 24px;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
-}
-
-.card-cuenta .sub {
-    font-size: 11px;
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.form-cuenta {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-}
-
-.form-cuenta input {
-    width: 100%;
-    padding: 7px 8px;
-    border: 1px solid #bbb;
-    border-radius: 2px;
-    font-size: 10px;
-    text-align: center;
-    background: white;
-    outline: none;
-}
-
-.form-cuenta input::placeholder { color: #888; font-size: 9px; }
-
-.label-mini {
-    font-size: 8px;
-    color: #888;
-    text-align: center;
-    margin-top: -6px;
-    margin-bottom: 5px;
-}
-
-.full { grid-column: span 2; }
-.left { grid-column: 1; }
-.right { grid-column: 2; }
-
-.logo-area {
+.contenedor {
     display: flex;
+
+    gap: 24px;
+
+    margin-left: 31px;
+}
+
+
+
+
+.menu {
+    width: 155px;
+
+    background: #17252A;
+
+    height: 158px;
+}
+
+
+
+
+.menu-titulo {
+    height: 23px;
+
+    background: white;
+
+    display: flex;
+
     align-items: center;
-    gap: 8px;
-    margin: 15px 0 10px 0;
+
+    padding-left: 15px;
+
+    font-size: 7px;
+
+    color: #17252A;
 }
 
-.logo-area .box-logo {
-    width: 32px; height: 32px;
-    background: #6b8cae;
-    display: flex; justify-content: center; align-items: center;
-    color: white; font-weight: bold; font-size: 10px;
-    border-radius: 2px;
-}
 
-.logo-area span { font-size: 10px; color: #888; }
 
-.btn-actualizar {
-    width: 100%;
-    background: #d4a017;
+.menu-opcion {
+    height: 27px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 14px;
+
     color: white;
-    border: none;
-    padding: 10px;
-    font-size: 9px;
-    font-weight: bold;
-    letter-spacing: 0.8px;
-    cursor: pointer;
-    margin-top: 5px;
+
+    font-size: 7px;
+
+    cursor: default;
 }
 
-.btn-actualizar:hover { background: #b8860b; }
+
+
+.cuenta {
+    width: 248px;
+
+    height: 246px;
+
+    background: white;
+
+    padding: 14px 38px;
+}
+
+
+
+
+.cuenta h1 {
+    text-align: center;
+
+    color: #E2C016;
+
+    font-size: 17px;
+
+    font-weight: normal;
+
+    margin-bottom: 17px;
+}
+
+
+
+
+.subtitulo {
+    font-size: 7px;
+
+    margin-bottom: 12px;
+
+    color: #17252A;
+}
+
+
+
+
+.campos {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px 5px;
+}
+
+
+
+
+.campos input {
+    width: 100%;
+
+    height: 22px;
+
+    border: 1px solid #9FA8AA;
+
+    outline: none;
+
+    background: white;
+
+    text-align: center;
+
+    font-size: 7px;
+
+    color: #17252A;
+}
+
+
+
+
+.campos input.azul {
+    background: #DCEEEF;
+
+    border: 1px solid #DCEEEF;
+}
+
+
+
+.campos input::placeholder {
+    color: #17252A;
+
+    font-size: 6px;
+}
+
+
+
+.usuario {
+    width: 100%;
+
+    height: 27px;
+
+    margin-top: 8px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+
+
+.icono {
+    width: 27px;
+
+    height: 27px;
+
+    background: #777;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: #E2C016;
+
+    font-size: 8px;
+
+    font-weight: bold;
+}
+
+
+
+
+.nombre-usuario {
+    height: 27px;
+
+    flex: 1;
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+
+    display: flex;
+
+    align-items: center;
+
+    padding-left: 18px;
+
+    font-size: 7px;
+
+    color: #17252A;
+}
+
+
+
+.actualizar {
+    width: 100%;
+
+    height: 22px;
+
+    margin-top: 7px;
+
+    border: none;
+
+    background: #E2C016;
+
+    color: white;
+
+    font-size: 6px;
+
+    cursor: default;
+}
